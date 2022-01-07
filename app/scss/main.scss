@@ -1,0 +1,79 @@
+@use 'reset';
+@use 'font';
+@use 'color';
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif ;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 16px;
+    background: url('/images/bg-header-desktop.png');
+    //background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    padding:1rem; 
+
+}
+section{
+    margin: 1rem;
+}
+
+//CTA Section
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+
+    &__logo{
+        max-width: 20%;
+        margin: 2rem auto;
+    }
+    &__title{
+        margin: 1rem 0;
+        text-align: center;
+        color: color.$dark-grayish-blue;
+    }
+    &__content{
+       text-align: center;
+       margin: 1rem 0;
+       color:color.$grayish-blue
+    }
+
+
+}
+.btn-ios{
+    border: none;
+    background: color.$strong-cyan;
+    width: 100%;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    color: white;
+    margin: 1rem auto; 
+    box-shadow: -2px 5px 10px 2px hsl(171, 66%, 44% .5);
+
+
+
+}
+.btn-mac{
+    border: none;
+    background: color.$light-blue;
+    width: 100%;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    color: white;
+    margin: 1rem auto; 
+    box-shadow: -2px 5px 10px 2px hsl(233, 100%, 69%, .3);
+}
+//Snippets Section
+
+
