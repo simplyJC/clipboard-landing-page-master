@@ -17,16 +17,21 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
   width: 100%;
   min-height: 100vh;
-  font-size: 16px;
+  font-size: 18px;
   background: url("/images/bg-header-desktop.png");
   background-repeat: no-repeat;
   background-position: top;
+  display: grid;
+}
+
+.wrapper {
   display: grid;
   justify-content: space-evenly;
   justify-items: center;
   align-content: space-evenly;
   align-items: center;
   padding: 1rem;
+  color: #9fabb2;
 }
 
 section {
@@ -36,25 +41,27 @@ section {
 .cta {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   justify-items: center;
-  align-content: space-evenly;
   align-items: center;
   justify-content: center;
+  margin: 6rem 0;
 }
 .cta__logo {
-  max-width: 20%;
+  max-width: 40%;
   margin: 2rem auto;
 }
 .cta__title {
   margin: 1rem 0;
   text-align: center;
   color: #4c545d;
+  font-size: 2rem;
+  font-weight: 600;
 }
 .cta__content {
   text-align: center;
-  margin: 1rem 0;
+  margin: 1rem 1rem;
   color: #9fabb2;
+  line-height: 1.5rem;
 }
 
 .btn-ios {
@@ -65,7 +72,9 @@ section {
   border-radius: 2rem;
   color: white;
   margin: 1rem auto;
-  box-shadow: -2px 5px 10px 2px rgba(97, 115, 255, 0.3);
+  box-shadow: -2px 5px 10px 2px rgba(38, 186, 164, 0.5);
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .btn-mac {
@@ -77,4 +86,181 @@ section {
   color: white;
   margin: 1rem auto;
   box-shadow: -2px 5px 10px 2px rgba(97, 115, 255, 0.3);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.features-snippets {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem auto;
+  padding: 0 1rem;
+}
+.features-snippets__title {
+  text-align: center;
+  font-weight: 600;
+  color: #4c545d;
+}
+.features-snippets__content {
+  text-align: center;
+  margin: 2rem 0;
+}
+.features-snippets__img {
+  margin: 2rem 0;
+}
+.features-snippets-list__title {
+  margin: 1rem 0 0 0;
+  color: #4c545d;
+}
+.features-snippets-list__content {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.features-clipboard {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem auto;
+}
+.features-clipboard__title {
+  text-align: center;
+  font-weight: 600;
+  color: #4c545d;
+}
+.features-clipboard__content {
+  text-align: center;
+  margin: 2rem 0;
+}
+.features-clipboard__img {
+  margin: 1rem 0;
+}
+
+.features-workflow {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 6rem 0;
+  text-align: center;
+}
+.features-workflow__title {
+  color: #4c545d;
+  margin: 1rem 0;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.features-workflow__subtitle {
+  color: #4c545d;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.features-workflow__icon {
+  margin: 6rem 0 1rem 0;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 6rem 0;
+}
+.company, .company img {
+  margin: 2rem 0;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem 0 6rem 0;
+}
+.download__title {
+  color: #4c545d;
+  margin: 1rem 0;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.download__content {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 6rem 0;
+  background: rgba(238, 239, 240, 0.5);
+  max-width: 100%;
+  width: 100%;
+}
+.footer__logo {
+  max-width: 16%;
+  margin: 2rem 0;
+}
+
+.footer-links {
+  list-style: none;
+  text-align: center;
+}
+.footer-links li {
+  margin: 1.5rem 0;
+  color: #4c545d;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem 0;
+  color: #9fabb2;
+}
+
+@media (min-width: 800px) {
+  .container {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .btn {
+    display: flex;
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+    font-size: 1rem;
+    gap: 1rem;
+  }
+  .btn-ios {
+    max-width: 50%;
+    padding: 1rem 0;
+    margin: 0.5rem 0;
+  }
+  .btn-mac {
+    max-width: 50%;
+    padding: 1rem 0;
+    margin: 0.5rem 0;
+  }
 }/*# sourceMappingURL=main.css.map */
