@@ -6,17 +6,22 @@ body{
     font-family: 'Bai Jamjuree', sans-serif ;
     width: 100%;
     min-height: 100vh;
+
     font-size: 18px;
     background: url('/images/bg-header-desktop.png');
-    background-size: cover;
+    // background-size: contain;
+    // background-position: 50% 0;
+    // background-size: cover;
+    background-size: 100% 10%;
     background-repeat: no-repeat;
-    background-position: top 1px left;
+    //background-position: top 1px left;
+    //background:url("file:///Users/FilePath/image.jpg") 50% / cover
     display:  grid;
  
 
 
-
 }
+
 .wrapper{
 
     display: grid;
@@ -76,6 +81,7 @@ section{
 
     font-weight: 600;
     font-size: 1.1rem;
+    cursor: pointer;
 
 
 }
@@ -90,6 +96,7 @@ section{
     box-shadow: -2px 5px 10px 2px hsl(233, 100%, 69%, .3);
     font-weight: 600;
     font-size: 1.1rem;
+    cursor: pointer;
 
 }
 //Snippets Section
