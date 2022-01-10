@@ -99,6 +99,9 @@ section {
   margin: 6rem auto;
   padding: 0 1rem;
 }
+.features-snippets__container {
+  text-align: center;
+}
 .features-snippets__title {
   text-align: center;
   font-weight: 600;
@@ -211,7 +214,9 @@ section {
 }
 .footer__logo {
   max-width: 16%;
-  margin: 2rem 0;
+  margin: 2rem auto;
+  align-self: center;
+  justify-self: center;
 }
 
 .footer-links {
@@ -237,7 +242,7 @@ section {
   color: #9fabb2;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .container {
     display: flex;
     width: 100%;
@@ -262,5 +267,86 @@ section {
     max-width: 50%;
     padding: 1rem 0;
     margin: 0.5rem 0;
+  }
+
+  .features-snippets__container {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  .features-snippets__content {
+    padding: 0 19rem;
+  }
+
+  .features-snippets__img {
+    transform: translateX(-10%);
+    max-width: 100%;
+  }
+
+  .features-snippets-list__container {
+    padding: 5rem;
+    text-align: left;
+  }
+
+  .features-snippets-list__content {
+    text-align: left;
+  }
+
+  .features-clipboard__content {
+    padding: 0 19rem;
+  }
+
+  .features-workflow__container {
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+  }
+  .features-workflow__container-single {
+    display: flex;
+  }
+
+  .company {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    align-content: center;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+  }
+
+  .footer-container-img {
+    width: 100%;
+    display: flex;
+  }
+
+  .footer__logo {
+    align-self: center;
+  }
+
+  .footer-container__social-media {
+    grid-row: span 2;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+  }
+
+  .social-links {
+    align-self: center;
+    justify-self: center;
   }
 }/*# sourceMappingURL=main.css.map */
